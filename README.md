@@ -1,5 +1,11 @@
-# mac_disk_uasge
+# mac disk uasge
+
 find disk usage and free space for import stuff
+
+## 0 通用方法
+
+- [How to Clear the System and Internet Caches on a Mac](https://www.makeuseof.com/tag/clear-cache-mac/)
+	- 使用[OnyX](https://www.titanium-software.fr/en/onyx.html)清理，可获得数十GB空间
 
 ## 1 查询方法
 
@@ -8,13 +14,31 @@ find disk usage and free space for import stuff
 ```
 ~
 ~/Library/Caches
+~/Library/Caches/com.apple.dt.Xcode/Downloads/
+~/Library/Application Support
 ~/Desktop
+/Applications
+```
+
+AppStore应用程序沙盒目录：
+
+```
+~/Library/Group Containers
+~/Library/Group Containers/UBF8T346G9.Office/Outlook/Outlook 15 Profiles/Main Profile/Data
 ```
 
 ### 1.2 检查命令
 
+**1.2.1 查询目录{DIR}下文件大小**
+
 ```
 du -shc {DIR}/* | sort -hr
+```
+
+**1.2.2 查询当前目录下文件大小**
+
+```
+du -shc ./* | sort -hr
 ```
 
 ## 2 命令行基础
