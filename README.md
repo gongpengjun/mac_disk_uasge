@@ -19,20 +19,19 @@ du -sh {DIR}/* | sort -hr
 
 ## 2 命令行基础
 
-### 2.1 sort
+### 2.1 du
+
+```
+-d depth  Display an entry for all files and directories depth directories deep.
+-s        Display an entry for each specified file.  (Equivalent to -d 0)
+-h        "Human-readable" output.  Use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte.
+```
+
+### 2.2 sort
 
 ```
 -h, --human-numeric-sort, --sort=human-numeric
 -r, --reverse
-```
-
-### 2.2 du
-
-```
--s      Display an entry for each specified file.  (Equivalent to -d 0)
--d depth
-        Display an entry for all files and directories depth directories deep.
--h      "Human-readable" output.  Use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte.
 ```
 
 ### 2.3 组合使用
