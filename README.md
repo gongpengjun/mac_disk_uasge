@@ -14,7 +14,7 @@ find disk usage and free space for import stuff
 ### 1.2 检查命令
 
 ```
-du -sh {DIR}/* | sort -hr
+du -shc {DIR}/* | sort -hr
 ```
 
 ## 2 命令行基础
@@ -22,6 +22,7 @@ du -sh {DIR}/* | sort -hr
 ### 2.1 du
 
 ```
+-c        Display a grand total.
 -d depth  Display an entry for all files and directories depth directories deep.
 -s        Display an entry for each specified file.  (Equivalent to -d 0)
 -h        "Human-readable" output.  Use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte.
@@ -37,13 +38,14 @@ du -sh {DIR}/* | sort -hr
 ### 2.3 组合使用
 
 ```
-du -sh ~/Library/Caches/* | sort -hr
+du -shc ~/Library/Caches/* | sort -hr
 ```
 
 示例输出
 
 ```
-$ du -sh ~/Library/Caches/* | sort -hr
+$ du -shc ~/Library/Caches/* | sort -hr
+ 13G	total
 4.5G	~/Library/Caches/com.apple.dt.Xcode
 1.0G	~/Library/Caches/Yarn
 879M	~/Library/Caches/AndroidStudio3.3
