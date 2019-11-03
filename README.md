@@ -37,6 +37,22 @@ du -shc {DIR}/* | sort -hr
 
 ### 2.3 组合使用
 
+
+**2.3.1 查询某文件夹大小**
+
+```
+du -sh ~/Library/Caches
+```
+
+示例输出
+
+```
+$ du -sh ~/Library/Caches
+13G	~/Library/Caches
+```
+
+**2.3.2 查询文件夹下详情**
+
 ```
 du -shc ~/Library/Caches/* | sort -hr
 ```
