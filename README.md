@@ -11,6 +11,8 @@ find disk usage and free space for import stuff
 
 ### 1.1 检查点
 
+**1.1.1 主检查点**
+
 ```
 ~
 ~/Library/Caches
@@ -20,7 +22,36 @@ find disk usage and free space for import stuff
 /Applications
 ```
 
-AppStore应用程序沙盒目录：
+**1.1.2 XCode相关**
+
+```
+~/Library/Developer/CoreSimulator/Devices
+~/Library/Developer/Xcode/DerivedData
+~/Library/Developer/Xcode/Archives
+~/Library/Developer/Xcode/UserData
+~/Library/Developer/Xcode/UserData/IB\ Support/Simulator\ Devices
+```
+
+**1.1.3 CocoaPods相关**
+
+```
+~/.cocoapods/repos/
+```
+
+**1.1.4 Homebrew相关**
+
+```
+$ brew --cache
+~/Library/Caches/Homebrew
+```
+
+**1.1.5 Android相关**
+
+```
+~/Library/Caches/AndroidStudio3.3
+```
+
+**1.1.6 AppStore应用程序沙盒目录**
 
 ```
 ~/Library/Group Containers
