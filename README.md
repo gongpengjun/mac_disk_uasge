@@ -9,6 +9,10 @@ find disk usage and free space for import stuff
 
 ## 1、查询方法
 
+```
+du -shc ./* | sort -hr
+```
+
 ### 1.1、检查点
 
 **1.1.1、主检查点**
