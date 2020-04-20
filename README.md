@@ -16,6 +16,8 @@ $ docker system df
 # --volumes Prune volumes
 $ docker system prune --all --volumes
 ```
+- [kubernetes/minikube](https://github.com/kubernetes/minikube/issues/1043)清理
+
 
 ## 1、查询方法
 
