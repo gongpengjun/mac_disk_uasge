@@ -2,10 +2,20 @@
 
 find disk usage and free space for import stuff
 
-## 0、通用方法
+## 0、常规检查
 
 - [How to Clear the System and Internet Caches on a Mac](https://www.makeuseof.com/tag/clear-cache-mac/)
 	- 使用[OnyX](https://www.titanium-software.fr/en/onyx.html)清理，可获得数十GB空间
+- 检查清理[Docker](https://docs.docker.com/engine/reference/commandline/system_prune/)占用空间
+
+```
+# df Show docker disk usage
+$ docker system df
+
+# --all Remove all unused images not just dangling ones
+# --volumes Prune volumes
+$ docker system prune --all --volumes
+```
 
 ## 1、查询方法
 
