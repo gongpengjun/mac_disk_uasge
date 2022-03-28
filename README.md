@@ -18,8 +18,13 @@ $ docker system prune --all --volumes
 ```
 - [kubernetes/minikube](https://github.com/kubernetes/minikube/issues/1043)清理
 
-
 ## 1、查询方法
+
+```shell
+find . -type f -size +1G -exec du -h {} \; | sort -hr
+```
+
+or
 
 ```
 du -shc ./* | sort -hr
