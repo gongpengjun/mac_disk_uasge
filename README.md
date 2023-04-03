@@ -4,6 +4,8 @@ find disk usage and free space for import stuff
 
 ## 0、常规检查
 
+- [腾讯柠檬清理](https://lemon.qq.com/) 转为Mac打造的系统清理工具
+
 - [How to Clear the System and Internet Caches on a Mac](https://www.makeuseof.com/tag/clear-cache-mac/)
 	- 使用[OnyX](https://www.titanium-software.fr/en/onyx.html)清理，可获得数十GB空间
 - 检查清理[Docker](https://docs.docker.com/engine/reference/commandline/system_prune/)占用空间
